@@ -44,6 +44,9 @@ public class E1controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovetoTarget();
+        if (FieldOfView.canSeePlayer==true)
+        {
+            MovetoTarget();  
+        }
     }
 }
